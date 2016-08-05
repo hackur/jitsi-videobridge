@@ -27,12 +27,12 @@ import java.util.concurrent.*;
  *
  * @author George Politis
  */
-public class Prober
+public class BitrateProber
 {
     /**
      *
      */
-    private static final Logger logger = Logger.getLogger(Prober.class);
+    private static final Logger logger = Logger.getLogger(BitrateProber.class);
 
     /**
      * The period during which we probe.
@@ -51,7 +51,7 @@ public class Prober
 
     /**
      * The maximum transmission unit (MTU) to be assumed by
-     * {@code Prober}.
+     * {@code BitrateProber}.
      */
     private static final int MTU = 1024 + 256;
 
@@ -76,7 +76,7 @@ public class Prober
      *
      * @param vc
      */
-    public Prober(VideoChannel vc)
+    public BitrateProber(VideoChannel vc)
     {
         this.vc = vc;
     }
